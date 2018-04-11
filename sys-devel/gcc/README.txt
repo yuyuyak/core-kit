@@ -23,3 +23,5 @@ Other important notes on this ebuild:
 * gcj is not currently supported by this ebuild.
 * graphite is not currently supported by this ebuild.
 * hardened is now supported, but we have deprecated the nopie and nossp USE flags from gentoo.
+
+The ebuilds in this forked repository with a _rc1 suffix are crossdev-capable
