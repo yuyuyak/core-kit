@@ -351,8 +351,6 @@ src_configure() {
 		--mandir=${DATAPATH}/man \
 		--infodir=${DATAPATH}/info \
 		--with-gxx-include-dir=${STDCXX_INCDIR} \
-		--enable-libstdcxx-time \
-		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
 		--host=$CHOST \
 		--build=$CHOST \
