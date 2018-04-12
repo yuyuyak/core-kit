@@ -24,6 +24,8 @@ Other important notes on this ebuild:
 * graphite is not currently supported by this ebuild.
 * hardened is now supported, but we have deprecated the nopie and nossp USE flags from gentoo.
 
+== Crossdev Capable ==
+
 The ebuilds in this forked repository with a _rc1 suffix are crossdev-capable.  They are best
 used in your local repository, renaming them without the _rc1 suffix.  Then they override the
 ebuild in the official tree for both native and cross-compiled toolchains and work perfectly
@@ -45,3 +47,5 @@ cross-armv7a-hardfloat-linux-gnueabi/gcc fpu_neon-vfpv4
 
 Note also that crossdev itself creates /etc/portage/package.use/cross-armv7a-hardfloat-linux-gnueabi,
 so be sure to add ".use" to the end of your local version.
+
+For more info see https://bugs.funtoo.org/browse/FL-3787
