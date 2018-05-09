@@ -512,9 +512,11 @@ src_install() {
 				"${D}"/etc/env.d/05gcc-${CTARGET}
 		fi
 		# nullify revdep-rebuild issues
-		dodir /etc/revdep-rebuild
-		echo -e "SEARCH_DIRS_MASK=\"/usr/${CTARGET} /usr/lib64/gcc/${CTARGET}/${PV} /usr/lib/gcc/${CTARGET}/${PV}\"" > \
-			"${D}"/etc/revdep-rebuild/05${CTARGET}
+        if [[ ! -f "/etc/revdep-rebuild/05${CTARGET}" ]]; then
+            dodir /etc/revdep-rebuild
+            echo -e "SEARCH_DIRS_MASK=\"/usr/${CTARGET} /usr/lib64/gcc/${CTARGET}/${PV} /usr/lib/gcc/${CTARGET}/${PV}\"" > \
+                "${D}"/etc/revdep-rebuild/05${CTARGET}
+        fi
 	fi
 	dodir /etc/env.d/gcc
 	create_gcc_env_entry
