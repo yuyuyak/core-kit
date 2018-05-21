@@ -48,4 +48,4 @@ cross-armv7a-hardfloat-linux-gnueabi/gcc fpu_neon-vfpv4
 Note also that crossdev itself creates /etc/portage/package.use/cross-armv7a-hardfloat-linux-gnueabi,
 so be sure to add ".use" to the end of your local version.
 
-For more info see https://bugs.funtoo.org/browse/FL-3787
+For more info see https://bugs.funtoo.org/browse/FL-3787 and the wiki here on github.
